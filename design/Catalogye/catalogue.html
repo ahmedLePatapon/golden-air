@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html class="dark" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Séjours - Collection Sport &amp; Bien-être</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1152d4",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                        "surface-dark": "#1e2738",
+                        "text-muted": "#92a4c9",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: "Plus Jakarta Sans", sans-serif; }::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #101622; }
+        ::-webkit-scrollbar-thumb { background: #324467; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #1152d4; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white antialiased selection:bg-primary selection:text-white">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#232f48] bg-background-dark/95 backdrop-blur-md px-6 py-4 lg:px-10">
+<div class="flex items-center gap-4 text-white">
+<div class="size-8 text-primary">
+<span class="material-symbols-outlined" style="font-size: 32px; font-variation-settings: 'FILL' 1;">diamond</span>
+</div>
+<h2 class="text-white text-xl font-bold leading-tight tracking-[-0.015em] font-display">Escalya</h2>
+</div>
+<div class="hidden lg:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Collection</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Destinations</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Expériences</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span>Conciergerie</span>
+<span class="material-symbols-outlined text-[16px]">support_agent</span>
+</a>
+</div>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary hover:bg-primary/90 transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Espace Membre</span>
+</button>
+</div>
+<button class="lg:hidden text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<main class="flex-1 flex flex-col items-center">
+<div class="w-full max-w-[1440px] px-4 md:px-8 lg:px-12 py-8">
+<div class="flex flex-col gap-3 mb-12">
+<h1 class="text-white text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em] font-display">Collection Sport &amp; Bien-être</h1>
+<p class="text-text-muted text-lg font-normal leading-normal max-w-2xl">Découvrez une sélection de séjours haut de gamme avec un service de conciergerie. Chaque destination est choisie pour le voyageur exigeant en quête de ressourcement et d'activité.</p>
+</div>
+<div class="flex flex-col lg:flex-row gap-10">
+<aside class="w-full lg:w-[280px] shrink-0 flex flex-col gap-8">
+<div class="relative">
+<input class="w-full bg-surface-dark border border-[#324467] rounded-lg h-12 px-4 pl-11 text-white placeholder-text-muted focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" placeholder="Rechercher une destination..." type="text"/>
+<span class="material-symbols-outlined absolute left-3 top-3 text-text-muted">search</span>
+</div>
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<h3 class="text-white text-sm font-bold uppercase tracking-wider">Budget</h3>
+<span class="text-xs text-text-muted">Par nuit</span>
+</div>
+<div class="flex h-[38px] w-full pt-4">
+<div class="relative flex h-1 w-full rounded-sm bg-[#324467]">
+<div class="absolute left-[20%] right-[30%] h-full rounded-sm bg-primary"></div>
+<div class="absolute left-[20%] top-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer group">
+<div class="size-4 rounded-full bg-primary border-2 border-white shadow-lg transition-transform group-hover:scale-110"></div>
+<div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-surface-dark px-2 py-1 rounded border border-[#324467] text-xs text-white whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">1 200 €</div>
+</div>
+<div class="absolute right-[30%] top-1/2 translate-x-1/2 -translate-y-1/2 cursor-pointer group">
+<div class="size-4 rounded-full bg-primary border-2 border-white shadow-lg transition-transform group-hover:scale-110"></div>
+<div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-surface-dark px-2 py-1 rounded border border-[#324467] text-xs text-white whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">5 000 €</div>
+</div>
+</div>
+</div>
+<div class="flex justify-between text-xs text-text-muted mt-[-10px]">
+<span>500 €</span>
+<span>10k+ €</span>
+</div>
+</div>
+<hr class="border-[#232f48]"/>
+<div class="flex flex-col gap-3">
+<h3 class="text-white text-sm font-bold uppercase tracking-wider mb-1">Destination</h3>
+<div class="flex flex-col gap-2">
+<label class="flex items-center gap-3 group cursor-pointer">
+<input class="h-5 w-5 rounded border-[#324467] bg-transparent text-primary focus:ring-0 focus:ring-offset-0 transition-colors cursor-pointer" type="checkbox"/>
+<span class="text-text-muted group-hover:text-white transition-colors">Maldives</span>
+</label>
+<label class="flex items-center gap-3 group cursor-pointer">
+<input checked="" class="h-5 w-5 rounded border-[#324467] bg-transparent text-primary focus:ring-0 focus:ring-offset-0 transition-colors cursor-pointer" type="checkbox"/>
+<span class="text-white font-medium">Santorin</span>
+</label>
+<label class="flex items-center gap-3 group cursor-pointer">
+<input class="h-5 w-5 rounded border-[#324467] bg-transparent text-primary focus:ring-0 focus:ring-offset-0 transition-colors cursor-pointer" type="checkbox"/>
+<span class="text-text-muted group-hover:text-white transition-colors">Aspen</span>
+</label>
+<label class="flex items-center gap-3 group cursor-pointer">
+<input class="h-5 w-5 rounded border-[#324467] bg-transparent text-primary focus:ring-0 focus:ring-offset-0 transition-colors cursor-pointer" type="checkbox"/>
+<span class="text-text-muted group-hover:text-white transition-colors">Kyoto</span>
+</label>
+<label class="flex items-center gap-3 group cursor-pointer">
+<input class="h-5 w-5 rounded border-[#324467] bg-transparent text-primary focus:ring-0 focus:ring-offset-0 transition-colors cursor-pointer" type="checkbox"/>
+<span class="text-text-muted group-hover:text-white transition-colors">Côte Amalfitaine</span>
+</label>
+</div>
+</div>
+<hr class="border-[#232f48]"/>
+<div class="flex flex-col gap-3">
+<h3 class="text-white text-sm font-bold uppercase tracking-wider mb-1">Durée</h3>
+<div class="flex flex-col gap-2">
+<label class="flex items-center gap-3 group cursor-pointer">
+<input class="h-5 w-5 rounded border-[#324467] bg-transparent text-primary focus:ring-0 focus:ring-offset-0 transition-colors cursor-pointer" type="checkbox"/>
+<span class="text-text-muted group-hover:text-white transition-colors">Week-end (2-3 nuits)</span>
+</label>
+<label class="flex items-center gap-3 group cursor-pointer">
+<input checked="" class="h-5 w-5 rounded border-[#324467] bg-transparent text-primary focus:ring-0 focus:ring-offset-0 transition-colors cursor-pointer" type="checkbox"/>
+<span class="text-white font-medium">Semaine (7 nuits)</span>
+</label>
+<label class="flex items-center gap-3 group cursor-pointer">
+<input class="h-5 w-5 rounded border-[#324467] bg-transparent text-primary focus:ring-0 focus:ring-offset-0 transition-colors cursor-pointer" type="checkbox"/>
+<span class="text-text-muted group-hover:text-white transition-colors">Long séjour (14+ nuits)</span>
+</label>
+</div>
+</div>
+<hr class="border-[#232f48]"/>
+<div class="flex flex-col gap-3">
+<h3 class="text-white text-sm font-bold uppercase tracking-wider mb-1">Type d'expérience</h3>
+<div class="flex flex-col gap-2">
+<label class="flex items-center gap-3 group cursor-pointer">
+<input checked="" class="h-5 w-5 rounded border-[#324467] bg-transparent text-primary focus:ring-0 focus:ring-offset-0 transition-colors cursor-pointer" type="checkbox"/>
+<span class="text-white font-medium">Bien-être &amp; Spa</span>
+</label>
+<label class="flex items-center gap-3 group cursor-pointer">
+<input class="h-5 w-5 rounded border-[#324467] bg-transparent text-primary focus:ring-0 focus:ring-offset-0 transition-colors cursor-pointer" type="checkbox"/>
+<span class="text-text-muted group-hover:text-white transition-colors">Aventure</span>
+</label>
+<label class="flex items-center gap-3 group cursor-pointer">
+<input class="h-5 w-5 rounded border-[#324467] bg-transparent text-primary focus:ring-0 focus:ring-offset-0 transition-colors cursor-pointer" type="checkbox"/>
+<span class="text-text-muted group-hover:text-white transition-colors">Gastronomie</span>
+</label>
+<label class="flex items-center gap-3 group cursor-pointer">
+<input class="h-5 w-5 rounded border-[#324467] bg-transparent text-primary focus:ring-0 focus:ring-offset-0 transition-colors cursor-pointer" type="checkbox"/>
+<span class="text-text-muted group-hover:text-white transition-colors">Romantique</span>
+</label>
+</div>
+</div>
+<hr class="border-[#232f48]"/>
+<div class="flex flex-col gap-3">
+<h3 class="text-white text-sm font-bold uppercase tracking-wider mb-1">Sport</h3>
+<div class="flex flex-col gap-2">
+<label class="flex items-center gap-3 group cursor-pointer">
+<input class="h-5 w-5 rounded border-[#324467] bg-transparent text-primary focus:ring-0 focus:ring-offset-0 transition-colors cursor-pointer" type="checkbox"/>
+<span class="text-text-muted group-hover:text-white transition-colors">Tennis</span>
+</label>
+<label class="flex items-center gap-3 group cursor-pointer">
+<input class="h-5 w-5 rounded border-[#324467] bg-transparent text-primary focus:ring-0 focus:ring-offset-0 transition-colors cursor-pointer" type="checkbox"/>
+<span class="text-text-muted group-hover:text-white transition-colors">Golf</span>
+</label>
+<label class="flex items-center gap-3 group cursor-pointer">
+<input class="h-5 w-5 rounded border-[#324467] bg-transparent text-primary focus:ring-0 focus:ring-offset-0 transition-colors cursor-pointer" type="checkbox"/>
+<span class="text-text-muted group-hover:text-white transition-colors">Ski alpin</span>
+</label>
+<label class="flex items-center gap-3 group cursor-pointer">
+<input class="h-5 w-5 rounded border-[#324467] bg-transparent text-primary focus:ring-0 focus:ring-offset-0 transition-colors cursor-pointer" type="checkbox"/>
+<span class="text-text-muted group-hover:text-white transition-colors">Cyclisme</span>
+</label>
+</div>
+</div>
+<hr class="border-[#232f48]"/>
+<div class="flex flex-col gap-3">
+<h3 class="text-white text-sm font-bold uppercase tracking-wider mb-1">Remise en forme</h3>
+<div class="flex flex-col gap-2">
+<label class="flex items-center gap-3 group cursor-pointer">
+<input class="h-5 w-5 rounded border-[#324467] bg-transparent text-primary focus:ring-0 focus:ring-offset-0 transition-colors cursor-pointer" type="checkbox"/>
+<span class="text-text-muted group-hover:text-white transition-colors">Yoga</span>
+</label>
+<label class="flex items-center gap-3 group cursor-pointer">
+<input class="h-5 w-5 rounded border-[#324467] bg-transparent text-primary focus:ring-0 focus:ring-offset-0 transition-colors cursor-pointer" type="checkbox"/>
+<span class="text-text-muted group-hover:text-white transition-colors">Pilates</span>
+</label>
+<label class="flex items-center gap-3 group cursor-pointer">
+<input class="h-5 w-5 rounded border-[#324467] bg-transparent text-primary focus:ring-0 focus:ring-offset-0 transition-colors cursor-pointer" type="checkbox"/>
+<span class="text-text-muted group-hover:text-white transition-colors">Détox</span>
+</label>
+<label class="flex items-center gap-3 group cursor-pointer">
+<input class="h-5 w-5 rounded border-[#324467] bg-transparent text-primary focus:ring-0 focus:ring-offset-0 transition-colors cursor-pointer" type="checkbox"/>
+<span class="text-text-muted group-hover:text-white transition-colors">Cardio</span>
+</label>
+</div>
+</div>
+</aside>
+<div class="flex-1">
+<div class="flex flex-wrap items-center justify-between mb-6 gap-4">
+<p class="text-text-muted text-sm"><span class="text-white font-bold">14</span> séjours sélectionnés</p>
+<div class="flex items-center gap-2">
+<span class="text-text-muted text-sm">Trier par :</span>
+<select class="bg-transparent border-none text-white text-sm font-medium focus:ring-0 cursor-pointer p-0 pr-6">
+<option class="bg-surface-dark">Recommandés</option>
+<option class="bg-surface-dark">Prix : Décroissant</option>
+<option class="bg-surface-dark">Prix : Croissant</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+<article class="flex flex-col rounded-xl bg-surface-dark overflow-hidden group hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 border border-transparent hover:border-primary/20">
+<div class="relative aspect-[4/3] w-full overflow-hidden">
+<img class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Luxury overwater bungalows in Maldives at sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyJ9v4dy1rtJl6ogjpiSX11xwxC6g-vUkcCJe9fTxcT0D03-A7fXE9IK6DOUR6mhzEFp4GOCsUEbSWKC2lj5F2o9goQ2oMP_PmLCENhw-5d3-UAKm95xNDar8oZr37aAXhvFJPrBMSfU16xx286FP4VtghCKhohN8XzyLWP02mUuMiGBGNmTNLuTobgSQnAIc8unQxfG2SkT5aj0fzWjZeRB73V9vPxQW0p3Mp2isHFTk8C3MApXzwyYsqyjFcGTSBF92nCBA3RtM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dark/90 via-transparent to-transparent opacity-80"></div>
+<div class="absolute top-4 left-4">
+<span class="bg-white/10 backdrop-blur-md text-white text-[10px] font-bold px-3 py-1.5 rounded-full uppercase tracking-widest border border-white/20">Exclusif</span>
+</div>
+<button class="absolute top-4 right-4 p-2 rounded-full bg-black/20 backdrop-blur-md text-white hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-4 p-6 pt-4">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-white text-lg font-bold font-display group-hover:text-primary transition-colors">The St. Regis Vommuli</h3>
+<div class="flex items-center gap-1.5 text-text-muted text-xs mt-1.5 font-medium tracking-wide uppercase">
+<span class="material-symbols-outlined text-[16px] text-primary">location_on</span>
+<span>Atoll de Dhaalu, Maldives</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-6 py-2 border-y border-[#324467]/30">
+<div class="flex items-center gap-2 text-text-muted" title="Private Gym">
+<span class="material-symbols-outlined text-[20px] font-light">fitness_center</span>
+<span class="text-xs">Salle de sport privée</span>
+</div>
+<div class="flex items-center gap-2 text-text-muted" title="Tennis">
+<span class="material-symbols-outlined text-[20px] font-light">sports_tennis</span>
+<span class="text-xs">Coach Tennis</span>
+</div>
+<div class="flex items-center gap-2 text-text-muted" title="Nutrition">
+<span class="material-symbols-outlined text-[20px] font-light">restaurant_menu</span>
+<span class="text-xs">Détox</span>
+</div>
+</div>
+<div class="flex justify-between items-end mt-1">
+<div class="flex flex-col">
+<span class="text-text-muted text-xs">À partir de</span>
+<div class="flex items-baseline gap-1">
+<span class="text-white text-xl font-bold">1 200 €</span>
+<span class="text-text-muted text-xs">/ nuit</span>
+</div>
+</div>
+<button class="text-primary text-sm font-bold hover:text-white transition-colors flex items-center gap-1">
+                                        Voir les détails <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<article class="flex flex-col rounded-xl bg-surface-dark overflow-hidden group hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 border border-transparent hover:border-primary/20">
+<div class="relative aspect-[4/3] w-full overflow-hidden">
+<img class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Minimalist luxury hotel room with city view of Tokyo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxsglOUlJmaBIu_cfXX-V2J7NacPq0Nz_a7K1Udu-IrcMvjs_E-8A1jIjaGDeyYWAThORZh74zo-bgdGZClGnI7HXUIpQ7xi9mXZwsTs47J7rj98pd3VkDArkn9JcBMhjds7tF97ZJkYQ16K9qIT5LFz21I7soXu5K4ey7cLZkNwioAV9yZfoH4dZDCFOoiXjw5KEh2WQhHfOpxyLg06x3m2aZ3gOv4JmpZX_c4Ec4q-LpnX8pOmoMTJHK6Xc5hdLC9dUOCbs8IM8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dark/90 via-transparent to-transparent opacity-80"></div>
+<div class="absolute top-4 left-4">
+<span class="bg-primary/80 backdrop-blur-md text-white text-[10px] font-bold px-3 py-1.5 rounded-full uppercase tracking-widest">Meilleure Vente</span>
+</div>
+<button class="absolute top-4 right-4 p-2 rounded-full bg-black/20 backdrop-blur-md text-white hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-4 p-6 pt-4">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-white text-lg font-bold font-display group-hover:text-primary transition-colors">Aman Tokyo</h3>
+<div class="flex items-center gap-1.5 text-text-muted text-xs mt-1.5 font-medium tracking-wide uppercase">
+<span class="material-symbols-outlined text-[16px] text-primary">location_on</span>
+<span>Otemachi, Tokyo</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-6 py-2 border-y border-[#324467]/30">
+<div class="flex items-center gap-2 text-text-muted">
+<span class="material-symbols-outlined text-[20px] font-light">pool</span>
+<span class="text-xs">Bassin de nage</span>
+</div>
+<div class="flex items-center gap-2 text-text-muted">
+<span class="material-symbols-outlined text-[20px] font-light">self_improvement</span>
+<span class="text-xs">Studio Yoga</span>
+</div>
+<div class="flex items-center gap-2 text-text-muted">
+<span class="material-symbols-outlined text-[20px] font-light">monitor_heart</span>
+<span class="text-xs">Cardio-training</span>
+</div>
+</div>
+<div class="flex justify-between items-end mt-1">
+<div class="flex flex-col">
+<span class="text-text-muted text-xs">À partir de</span>
+<div class="flex items-baseline gap-1">
+<span class="text-white text-xl font-bold">950 €</span>
+<span class="text-text-muted text-xs">/ nuit</span>
+</div>
+</div>
+<button class="text-primary text-sm font-bold hover:text-white transition-colors flex items-center gap-1">
+                                        Voir les détails <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<article class="flex flex-col rounded-xl bg-surface-dark overflow-hidden group hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 border border-transparent hover:border-primary/20">
+<div class="relative aspect-[4/3] w-full overflow-hidden">
+<img class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="White architecture and blue domes of Santorini hotel" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzaSnle4EYLTbkOCmiEgTEE3jxfT4PhVCuvlZkICMNpVNWJCdw-HtwuTBKolnc8DKi0ai8FxCeefxCPUgr-DscM7FiZN3s9rS139RWnCM74lJ5qRIjbx3SIt2ZnGF3P9og1WF8iao5VdwIspNrNnG7az69wfGSdySok9TKDTo8TNdr3Id_ueO0xOR-jeDL89faXSlcG_krcrMHA_YIYWcpWayCNbjttHlPPzQehh51-pfVaAiKqUU92okPkcEqtALa_YAk0L5bmq8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dark/90 via-transparent to-transparent opacity-80"></div>
+<button class="absolute top-4 right-4 p-2 rounded-full bg-black/20 backdrop-blur-md text-white hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-4 p-6 pt-4">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-white text-lg font-bold font-display group-hover:text-primary transition-colors">Canaves Oia Epitome</h3>
+<div class="flex items-center gap-1.5 text-text-muted text-xs mt-1.5 font-medium tracking-wide uppercase">
+<span class="material-symbols-outlined text-[16px] text-primary">location_on</span>
+<span>Santorin, Grèce</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-6 py-2 border-y border-[#324467]/30">
+<div class="flex items-center gap-2 text-text-muted">
+<span class="material-symbols-outlined text-[20px] font-light">accessibility_new</span>
+<span class="text-xs">Coach personnel</span>
+</div>
+<div class="flex items-center gap-2 text-text-muted">
+<span class="material-symbols-outlined text-[20px] font-light">waves</span>
+<span class="text-xs">Aquagym</span>
+</div>
+<div class="flex items-center gap-2 text-text-muted">
+<span class="material-symbols-outlined text-[20px] font-light">spa</span>
+<span class="text-xs">Massage</span>
+</div>
+</div>
+<div class="flex justify-between items-end mt-1">
+<div class="flex flex-col">
+<span class="text-text-muted text-xs">À partir de</span>
+<div class="flex items-baseline gap-1">
+<span class="text-white text-xl font-bold">1 450 €</span>
+<span class="text-text-muted text-xs">/ nuit</span>
+</div>
+</div>
+<button class="text-primary text-sm font-bold hover:text-white transition-colors flex items-center gap-1">
+                                        Voir les détails <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<article class="flex flex-col rounded-xl bg-surface-dark overflow-hidden group hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 border border-transparent hover:border-primary/20">
+<div class="relative aspect-[4/3] w-full overflow-hidden">
+<img class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Snowy mountain chalets in Aspen at dusk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByx6_kONVZ3iiq7xBkNmLhuXRXGLD8l9LIlCdy9luXF8XNFwYxI1rv6Lu83LSoRMgaZ0RWZNFt6lZ3K79ez3KtMMy_w93xjJSapvAC_SysFVxkLrM12efWPqvRIFJmk-Of3QV7SNOhUuAHflpkX88CfxF_z27vXYstbShl9K4x-rcNEu6iXOqtwUFpu5rvb6AS7LQ5J6lYnwUNpcg2DGieabQS2QSJphK_8oCPWaiy94kMPVOs_8iflhWsCafhZH0Hb5Ew3ubVNfw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dark/90 via-transparent to-transparent opacity-80"></div>
+<button class="absolute top-4 right-4 p-2 rounded-full bg-black/20 backdrop-blur-md text-white hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-4 p-6 pt-4">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-white text-lg font-bold font-display group-hover:text-primary transition-colors">The Little Nell</h3>
+<div class="flex items-center gap-1.5 text-text-muted text-xs mt-1.5 font-medium tracking-wide uppercase">
+<span class="material-symbols-outlined text-[16px] text-primary">location_on</span>
+<span>Aspen, Colorado</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-6 py-2 border-y border-[#324467]/30">
+<div class="flex items-center gap-2 text-text-muted">
+<span class="material-symbols-outlined text-[20px] font-light">downhill_skiing</span>
+<span class="text-xs">Ski Pro</span>
+</div>
+<div class="flex items-center gap-2 text-text-muted">
+<span class="material-symbols-outlined text-[20px] font-light">hot_tub</span>
+<span class="text-xs">Spa thermal</span>
+</div>
+<div class="flex items-center gap-2 text-text-muted">
+<span class="material-symbols-outlined text-[20px] font-light">sports_gymnastics</span>
+<span class="text-xs">Pilates</span>
+</div>
+</div>
+<div class="flex justify-between items-end mt-1">
+<div class="flex flex-col">
+<span class="text-text-muted text-xs">À partir de</span>
+<div class="flex items-baseline gap-1">
+<span class="text-white text-xl font-bold">2 100 €</span>
+<span class="text-text-muted text-xs">/ nuit</span>
+</div>
+</div>
+<button class="text-primary text-sm font-bold hover:text-white transition-colors flex items-center gap-1">
+                                        Voir les détails <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<article class="flex flex-col rounded-xl bg-surface-dark overflow-hidden group hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 border border-transparent hover:border-primary/20">
+<div class="relative aspect-[4/3] w-full overflow-hidden">
+<img class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Modern luxury villa pool overlooking Amalfi coast" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsKYpx7_OgVb1QcX-IOQKwzM9C6WHlj_-Nq6MshitiH3casI4RWnlDYSZkyYIpAlrFp4TNvHdLsdB0lQ9JqZ6P31i4VHl2yTIbgEorj4bBogbnSpSPVI87aLU0ulvF8tDPf856xpqjDa4Ta_-1G76zgU7Ww3Rg9FpmGKo2-1SDrOZOeK5zDhLjF_7Wij4apAfYfKCHhCqw96D7lV2ISn8WDWerIS00I2MJr26-HgI6SsikORrgAFOhuTv3v4yZc0_CSWrFDd1ki-Q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dark/90 via-transparent to-transparent opacity-80"></div>
+<div class="absolute top-4 left-4">
+<span class="bg-white/10 backdrop-blur-md text-white text-[10px] font-bold px-3 py-1.5 rounded-full uppercase tracking-widest border border-white/20">Nouveau</span>
+</div>
+<button class="absolute top-4 right-4 p-2 rounded-full bg-black/20 backdrop-blur-md text-white hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-4 p-6 pt-4">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-white text-lg font-bold font-display group-hover:text-primary transition-colors">Monastero Santa Rosa</h3>
+<div class="flex items-center gap-1.5 text-text-muted text-xs mt-1.5 font-medium tracking-wide uppercase">
+<span class="material-symbols-outlined text-[16px] text-primary">location_on</span>
+<span>Côte Amalfitaine, Italie</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-6 py-2 border-y border-[#324467]/30">
+<div class="flex items-center gap-2 text-text-muted">
+<span class="material-symbols-outlined text-[20px] font-light">accessibility_new</span>
+<span class="text-xs">Coach personnel</span>
+</div>
+<div class="flex items-center gap-2 text-text-muted">
+<span class="material-symbols-outlined text-[20px] font-light">pool</span>
+<span class="text-xs">Piscine infinie</span>
+</div>
+<div class="flex items-center gap-2 text-text-muted">
+<span class="material-symbols-outlined text-[20px] font-light">grass</span>
+<span class="text-xs">Méditation</span>
+</div>
+</div>
+<div class="flex justify-between items-end mt-1">
+<div class="flex flex-col">
+<span class="text-text-muted text-xs">À partir de</span>
+<div class="flex items-baseline gap-1">
+<span class="text-white text-xl font-bold">3 400 €</span>
+<span class="text-text-muted text-xs">/ nuit</span>
+</div>
+</div>
+<button class="text-primary text-sm font-bold hover:text-white transition-colors flex items-center gap-1">
+                                        Voir les détails <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<article class="flex flex-col rounded-xl bg-surface-dark overflow-hidden group hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 border border-transparent hover:border-primary/20">
+<div class="relative aspect-[4/3] w-full overflow-hidden">
+<img class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Tropical luxury resort pool with palm trees at night" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkUcKtq3AlRSRy4FyZoMqcfVWc5H7najvEvKIWqcV1a_DNRo3AXdZO0WflJDwTFGh21IT7mHSL51v69dm2L0okmWd7JgoVQ3kqas0nbx_EKppQRgSJMmLABKCs2RtTpLyIKkD-u7hNLPVjqPudZ3sdtubkjfFM84taSxbCHX83hRP1fEJ0UnwwVJv6hX9h3WjIWwZH_LyYGNlMxSkBQ81FkQP-FekbyHCmd1v10-UqD6pKVHxfcwndsGwNIqlOO4iA79brPOzns10"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dark/90 via-transparent to-transparent opacity-80"></div>
+<button class="absolute top-4 right-4 p-2 rounded-full bg-black/20 backdrop-blur-md text-white hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-4 p-6 pt-4">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-white text-lg font-bold font-display group-hover:text-primary transition-colors">Six Senses Douro</h3>
+<div class="flex items-center gap-1.5 text-text-muted text-xs mt-1.5 font-medium tracking-wide uppercase">
+<span class="material-symbols-outlined text-[16px] text-primary">location_on</span>
+<span>Lamego, Portugal</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-6 py-2 border-y border-[#324467]/30">
+<div class="flex items-center gap-2 text-text-muted">
+<span class="material-symbols-outlined text-[20px] font-light">hiking</span>
+<span class="text-xs">Bain de forêt</span>
+</div>
+<div class="flex items-center gap-2 text-text-muted">
+<span class="material-symbols-outlined text-[20px] font-light">spa</span>
+<span class="text-xs">Hydrothérapie</span>
+</div>
+<div class="flex items-center gap-2 text-text-muted">
+<span class="material-symbols-outlined text-[20px] font-light">directions_bike</span>
+<span class="text-xs">Cyclisme</span>
+</div>
+</div>
+<div class="flex justify-between items-end mt-1">
+<div class="flex flex-col">
+<span class="text-text-muted text-xs">À partir de</span>
+<div class="flex items-baseline gap-1">
+<span class="text-white text-xl font-bold">850 €</span>
+<span class="text-text-muted text-xs">/ nuit</span>
+</div>
+</div>
+<button class="text-primary text-sm font-bold hover:text-white transition-colors flex items-center gap-1">
+                                        Voir les détails <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+<div class="flex justify-center mt-16 mb-8">
+<button class="px-8 py-3 rounded-lg border border-[#324467] text-white font-medium hover:bg-[#324467] hover:text-white transition-all">
+                            Découvrir plus
+                        </button>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>

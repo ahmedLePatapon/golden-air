@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html class="dark" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Escalya | Séjours d'Exception Tout-Inclus</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1152d4",
+                        "gold-accent": "#D4AF37",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"],
+                        "sans": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        .glass-nav {
+            background: rgba(16, 22, 34, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .text-shadow-lg {
+            text-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-sans text-slate-900 dark:text-slate-100 selection:bg-primary selection:text-white">
+<header class="fixed top-0 w-full z-50 glass-nav border-b border-white/10">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="size-8 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path>
+</svg>
+</div>
+<h1 class="text-2xl font-extrabold tracking-tighter text-white uppercase">Escalya</h1>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-semibold text-slate-300 hover:text-white transition-colors" href="#">Concept</a>
+<a class="text-sm font-semibold text-slate-300 hover:text-white transition-colors" href="#">Séjours</a>
+<a class="text-sm font-semibold text-slate-300 hover:text-white transition-colors" href="#">À propos</a>
+<a class="text-sm font-semibold text-slate-300 hover:text-white transition-colors" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden lg:block px-6 py-2 rounded-lg border border-white/20 text-white text-sm font-bold hover:bg-white/10 transition-all">
+                    Espace Membre
+                </button>
+<button class="bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-lg text-sm font-bold shadow-lg shadow-primary/20 transition-all">
+                    Réserver
+                </button>
+</div>
+</div>
+</header>
+<main>
+<section class="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style='background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(16, 22, 34, 1) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDYiuww3N99V82WFif_6Iy-6nBwOzO_nqvztoImDTXx9GbRDoV8QaSzqwVXxtBCH8gWa33AbhZNqP2f9kuNVquPF-z3cmdzqbvlQOYzKgVCwiAxtrKTRL475jiRfkdUhFzE1p-4vZaKKlqRfQnswOj4C7T6OpEhIiCQ-b-tMpMJSvT6l2EKaQsB0jh17YLyOqmJifcaxM7cekeTb8tvsmHWqaRNHJhx8y_qf7vyZuHULnMBkQj3HIe8-3KU_92HBW-4HrwxR5brapY");'>
+</div>
+<div class="relative z-10 text-center px-4 max-w-5xl mx-auto">
+<span class="text-gold-accent font-bold tracking-[0.4em] uppercase mb-6 block text-sm">L'Art de s'évader</span>
+<h1 class="text-5xl md:text-7xl lg:text-8xl text-white mb-8 leading-[1.1] font-extrabold tracking-tight text-shadow-lg">
+                    L'Exceptionnel à Votre Portée
+                </h1>
+<p class="text-lg md:text-xl text-slate-200 mb-10 max-w-2xl mx-auto font-normal leading-relaxed">
+                    Vivez des séjours tout-inclus dans les plus prestigieux domaines et châteaux de France. Une parenthèse hors du temps orchestrée par nos experts.
+                </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<button class="w-full sm:w-auto px-10 py-4 bg-primary text-white rounded-lg font-extrabold text-lg hover:scale-[1.02] active:scale-[0.98] transition-all">
+                        Découvrir les séjours
+                    </button>
+<button class="w-full sm:w-auto px-10 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-lg font-extrabold text-lg hover:bg-white/20 transition-all">
+                        Notre Concept
+                    </button>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+<span class="material-symbols-outlined text-white/50 text-3xl">keyboard_double_arrow_down</span>
+</div>
+</section>
+<section class="py-24 px-6 bg-background-light dark:bg-background-dark">
+<div class="max-w-7xl mx-auto">
+<div class="grid lg:grid-cols-2 gap-16 items-center mb-20">
+<div>
+<h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-6">L'Art de Vivre Escalya</h2>
+<p class="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed font-medium">
+                            Plus qu'un voyage, nous vous proposons une immersion totale. Chaque détail, de la gastronomie étoilée aux transferts privés, est pensé pour que votre seule préoccupation soit de profiter de l'instant présent.
+                        </p>
+<div class="flex items-center gap-4 text-primary font-extrabold">
+<span class="h-[2px] w-12 bg-primary"></span>
+<a class="uppercase tracking-widest text-sm" href="#">En savoir plus sur l'expérience</a>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="flex flex-col gap-4 p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-white/5 shadow-sm">
+<span class="material-symbols-outlined text-gold-accent text-3xl">castle</span>
+<h3 class="font-bold text-lg">Héritage</h3>
+<p class="text-sm text-slate-500 font-medium">Des lieux chargés d'histoire et de caractère.</p>
+</div>
+<div class="flex flex-col gap-4 p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-white/5 shadow-sm">
+<span class="material-symbols-outlined text-gold-accent text-3xl">restaurant</span>
+<h3 class="font-bold text-lg">Gastronomie</h3>
+<p class="text-sm text-slate-500 font-medium">Une table d'exception servie par nos chefs.</p>
+</div>
+<div class="flex flex-col gap-4 p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-white/5 shadow-sm">
+<span class="material-symbols-outlined text-gold-accent text-3xl">concierge</span>
+<h3 class="font-bold text-lg">Service</h3>
+<p class="text-sm text-slate-500 font-medium">Conciergerie dédiée 24h/24 pour vos envies.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 px-6 bg-slate-50 dark:bg-[#0a0f1a]">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-12">
+<div>
+<span class="text-primary font-extrabold text-sm tracking-widest uppercase mb-2 block">Collections</span>
+<h2 class="text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">Séjours d'Exception</h2>
+</div>
+<button class="hidden md:flex items-center gap-2 text-slate-600 dark:text-slate-400 font-bold hover:text-primary transition-colors">
+                        Voir tout le catalogue <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="group relative bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-xl hover:-translate-y-2 transition-all duration-300">
+<div class="aspect-[4/5] overflow-hidden relative">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10"></div>
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDm7PVbQYpkP4WRqZfy-Ab7e0UYlP9X9pbyhM4M9ezD6WLhbu-J-DnK27pCtuD3K97SpsM_dxV-7oTGn3dh6EY1-YPUWE8427Ppe6lqaPGFW1UhPSz8UzEbuOJyrGgRVBlrn82BQAS01F70EABUfHB_gH5E5ib-_Er05w7UZpAaMMvWAFn8tPJBL2N3AlznR9QAqXTLLsGrWPbwKLbAAGtFR8T56c4tVNq1BG0vZujqmRC50wyZCqY9SBHn1i7lZZZ5hY3NzsyRESI"/>
+<div class="absolute top-4 left-4 z-20 bg-primary px-3 py-1 rounded-full text-xs font-black text-white uppercase tracking-tighter">
+                                Côte d'Azur
+                            </div>
+<div class="absolute bottom-6 left-6 right-6 z-20">
+<h3 class="text-2xl font-bold text-white mb-2 tracking-tight">Domaine de la Vigie</h3>
+<p class="text-slate-300 text-sm mb-4 font-medium">Un écrin de verdure surplombant la Méditerranée.</p>
+<button class="w-full py-3 bg-white/10 backdrop-blur-md border border-white/30 text-white rounded-lg font-extrabold text-sm hover:bg-white hover:text-primary transition-all uppercase tracking-widest">
+                                    Découvrir
+                                </button>
+</div>
+</div>
+</div>
+<div class="group relative bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-xl hover:-translate-y-2 transition-all duration-300">
+<div class="aspect-[4/5] overflow-hidden relative">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10"></div>
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9UCCQKLMDzj5cLIWFdKIigjCZWnCmKAGnHU3reiUQh4HPxw1S8islPxqTSt_KQyZzoXB5yEoz-dRb0Nv7bEyj_jbQ4zogQQcijIz-nR-JtZXwEdlswn5_0RXeu5saFDcHICBcFtJESdavYqTPBI82YXbCb9GAClcw8aF4dbk8mU8hr9rUXA5yJ7h5s-Nj7r3_bauEUGvBRPKsK7DwhKys65ryOwdk0VFOVlvk05J0TmzbHX3GbB8bee4d9urFUq6Qkqqqi0GEYc4"/>
+<div class="absolute top-4 left-4 z-20 bg-primary px-3 py-1 rounded-full text-xs font-black text-white uppercase tracking-tighter">
+                                Alpes Françaises
+                            </div>
+<div class="absolute bottom-6 left-6 right-6 z-20">
+<h3 class="text-2xl font-bold text-white mb-2 tracking-tight">Chalet Cristal</h3>
+<p class="text-slate-300 text-sm mb-4 font-medium">Luxe contemporain au sommet des sommets.</p>
+<button class="w-full py-3 bg-white/10 backdrop-blur-md border border-white/30 text-white rounded-lg font-extrabold text-sm hover:bg-white hover:text-primary transition-all uppercase tracking-widest">
+                                    Découvrir
+                                </button>
+</div>
+</div>
+</div>
+<div class="group relative bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-xl hover:-translate-y-2 transition-all duration-300">
+<div class="aspect-[4/5] overflow-hidden relative">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10"></div>
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMahL9Z2A_hkEoBsl7dsw3tM2uQ3nbGjEjoBuYstdW_KCpz-wUzg1uf6VJ1c-F9UHoHFWfj4pEITqqyO8bOStkPBhWIhvt9Pyq5FowtagCWI8uecXATH6I0BrsxkiD9T0tcyFGonhMzQmRNAjtzpMK6cAPGWn_lWf6o_fri7bLAmIxNrIokqfbJdFCjEyCaih0x3yXIO4LWMA-jzZYt2WY6qpmOiCvW7FClGrXXSEttaNrNEcGXxoIRkU4wVoHOVq0oNHoodRifDI"/>
+<div class="absolute top-4 left-4 z-20 bg-primary px-3 py-1 rounded-full text-xs font-black text-white uppercase tracking-tighter">
+                                Val de Loire
+                            </div>
+<div class="absolute bottom-6 left-6 right-6 z-20">
+<h3 class="text-2xl font-bold text-white mb-2 tracking-tight">Château de Chenonceau</h3>
+<p class="text-slate-300 text-sm mb-4 font-medium">Privatisation exclusive de l'aile royale.</p>
+<button class="w-full py-3 bg-white/10 backdrop-blur-md border border-white/30 text-white rounded-lg font-extrabold text-sm hover:bg-white hover:text-primary transition-all uppercase tracking-widest">
+                                    Découvrir
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 px-6 bg-background-light dark:bg-background-dark border-t border-slate-200 dark:border-slate-800">
+<div class="max-w-5xl mx-auto text-center">
+<span class="material-symbols-outlined text-gold-accent text-5xl mb-8">format_quote</span>
+<blockquote class="text-3xl md:text-4xl text-slate-900 dark:text-white leading-relaxed mb-8 font-bold tracking-tight">
+                    "Une expérience absolument irréprochable. Escalya a su redéfinir notre vision du luxe discret et de l'hospitalité française. Nous ne planifierons plus nos week-ends sans eux."
+                </blockquote>
+<div class="flex flex-col items-center">
+<div class="size-16 rounded-full bg-slate-200 dark:bg-slate-700 mb-4 overflow-hidden">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJtVE__4GTl4CM3XPn5RwAP_zqgSd8jSfVapSWZrs-Sm0jw-arn9gdCkyTCmGmqPpJLakUTRgpIsVhSZTg_VvG8E1BmqYGi-Zm_F8HQz2mi5tl5Cand6ZBGnlUbxkcmTn8tnRDjupyqQ_VfiB5IoTswntIoSuMXK3-oaU3BeugNDIAIWAxsVHL7qLpjxP-QR-CizBTIhf4rxtmZkkLwGA9UGjAI0ibyCFz5_fXaomvs9WaA0fhL9sUYSzCp-5ttoa6gqKG4n4eDdA"/>
+</div>
+<p class="font-extrabold text-slate-900 dark:text-white">Jean-Baptiste M.</p>
+<p class="text-sm font-bold text-slate-500 uppercase tracking-widest">Fondateur, Groupe Orion</p>
+</div>
+</div>
+</section>
+<section class="py-12 px-6 border-y border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950/50">
+<div class="max-w-7xl mx-auto flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-40 grayscale">
+<span class="text-xl font-extrabold tracking-tighter">LOUIS VUITTON</span>
+<span class="text-xl font-extrabold tracking-tighter">AIR FRANCE</span>
+<span class="text-xl font-extrabold tracking-tighter">CHAMPAGNE KRUG</span>
+<span class="text-xl font-extrabold tracking-tighter">RELAIS &amp; CHÂTEAUX</span>
+<span class="text-xl font-extrabold tracking-tighter">FOUR SEASONS</span>
+</div>
+</section>
+<section class="py-24 px-6 relative overflow-hidden">
+<div class="absolute inset-0 bg-primary"></div>
+<div class="absolute right-0 top-0 w-1/3 h-full bg-white/5 skew-x-12 translate-x-1/2"></div>
+<div class="max-w-4xl mx-auto relative z-10 text-center text-white">
+<h2 class="text-4xl font-extrabold tracking-tight mb-6">Rejoignez le Cercle Escalya</h2>
+<p class="text-white/80 text-lg mb-10 font-medium">Recevez en avant-première nos nouvelles destinations et nos offres exclusives réservées à nos membres.</p>
+<form class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
+<input class="flex-1 px-6 py-4 rounded-lg bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-white/30 font-medium" placeholder="Votre adresse email" type="email"/>
+<button class="px-8 py-4 bg-white text-primary font-extrabold rounded-lg hover:bg-slate-100 transition-colors">S'inscrire</button>
+</form>
+</div>
+</section>
+</main>
+<footer class="bg-background-dark text-slate-400 py-16 px-6 border-t border-white/5">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-2 text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path>
+</svg>
+</div>
+<span class="text-xl font-black tracking-widest uppercase">Escalya</span>
+</div>
+<p class="text-sm leading-relaxed font-medium">Expert en séjours courts de prestige. Nous transformons vos moments de repos en expériences légendaires à travers les plus beaux domaines de France.</p>
+<div class="flex gap-4">
+<a class="hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">share</span></a>
+<a class="hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">photo_camera</span></a>
+</div>
+</div>
+<div>
+<h4 class="text-white font-extrabold mb-6 uppercase tracking-wider text-sm">Navigation</h4>
+<ul class="flex flex-col gap-4 text-sm font-semibold">
+<li><a class="hover:text-primary transition-colors" href="#">Notre Concept</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Les Séjours</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Destinations</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Conciergerie</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-extrabold mb-6 uppercase tracking-wider text-sm">Aide &amp; Contact</h4>
+<ul class="flex flex-col gap-4 text-sm font-semibold">
+<li><a class="hover:text-primary transition-colors" href="#">FAQ</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contactez-nous</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Presse</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Devenir Partenaire</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-extrabold mb-6 uppercase tracking-wider text-sm">Légal</h4>
+<ul class="flex flex-col gap-4 text-sm font-semibold">
+<li><a class="hover:text-primary transition-colors" href="#">Mentions Légales</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Politique de Confidentialité</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">CGV</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Cookies</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs uppercase tracking-widest font-bold opacity-50">
+<p>© 2024 Escalya Luxury Travel. Tous droits réservés.</p>
+<p>Conçu pour l'exceptionnel.</p>
+</div>
+</footer>
+
+</body></html>

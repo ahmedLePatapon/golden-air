@@ -1,24 +1,40 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-primary: #1152d4;
+  --color-gold-accent: #D4AF37;
+  --color-background-dark: #101622;
+  --color-anthracite: #1a1f2b;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  }
+  .text-shadow {
+    text-shadow: 0 2px 6px rgba(0,0,0,0.55);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Utility glass surfaces */
+.glass-nav {
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(8px) saturate(120%);
+  -webkit-backdrop-filter: blur(8px) saturate(120%);
 }
+.glass-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.06);
+  backdrop-filter: blur(6px);
+}
+
+.luxury-gradient {
+  background: linear-gradient(90deg, var(--color-primary), rgba(20,36,96,0.85));
+}
+
+/* Semantic color tokens for Tailwind usage */
+.bg-background-dark { background-color: var(--color-background-dark); }
+.text-gold { color: var(--color-gold-accent); }
+

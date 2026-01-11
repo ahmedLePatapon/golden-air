@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Contact &amp; Custom Quote | Escalya Luxury Travel</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1152d4",
+                        "accent-gold": "#C5A059",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#0f172a",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: "Plus Jakarta Sans", sans-serif;
+        }
+
+        .fine-line {
+            border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+        }
+
+        .glass-card {
+            background: rgba(28, 31, 39, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen">
+    <!-- Top Navigation Bar -->
+    <header
+        class="sticky top-0 z-50 w-full border-b border-white/5 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="size-8 bg-primary rounded-lg flex items-center justify-center text-white">
+                    <svg class="size-5" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path>
+                    </svg>
+                </div>
+                <h1 class="text-xl font-extrabold tracking-tight uppercase">Escalya</h1>
+            </div>
+            <nav class="hidden md:flex items-center gap-10">
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Destinations</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Experiences</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="#">The Conciergerie</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="#">About</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <button
+                    class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all">
+                    My Account
+                </button>
+                <div class="size-10 rounded-full border border-white/10 bg-cover bg-center"
+                    data-alt="Close-up portrait of a travel consultant"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDEn-BvmRavZ7-7phqmwu3tMYzTqathZJrW2lHbnCsgDNUAeXDGdXhWq54dgULaQSSnH04_pPXJjUk_R6gjcrccPE2q3JMsZc-0ekckpKFHD1BqrnQq6QSk_Ul5TeRLF9HkKt1Aq32DIOqxsPNBIG4bG-lcVb6i8WycsHA5cHoO3EtoZkr_BBi45J_GmPuB0kJpxX4qoeSWrtgVCMKJbK763RdFXgRbnI6Iw1voKqJGy1bnqT3sSp27streXO2Ruk_s2jxGhSvf7RA')">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="max-w-7xl mx-auto px-6 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+            <!-- Left Column: Form Inquiry -->
+            <div class="lg:col-span-8">
+                <!-- Page Heading -->
+                <div class="mb-12">
+                    <span class="text-accent-gold text-sm font-bold tracking-[0.2em] uppercase mb-4 block">Tailor-Made
+                        Journey</span>
+                    <h2 class="text-5xl font-black tracking-tight mb-4">Bespoke Inquiry</h2>
+                    <p class="text-slate-500 dark:text-slate-400 text-lg max-w-2xl leading-relaxed">
+                        Initiate your journey with a personal travel curator. Our team will craft an itinerary as unique
+                        as your desires.
+                    </p>
+                </div>
+                <!-- Form Sections -->
+                <div class="space-y-12">
+                    <!-- Concierge Introduction -->
+                    <div class="flex items-center gap-6 p-6 rounded-xl bg-primary/5 border border-primary/10">
+                        <div class="size-20 rounded-full bg-cover bg-center border-2 border-accent-gold/30"
+                            data-alt="Portrait of a smiling professional concierge"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDYrfFEH4invZvDqcL0Tlw4_ZzgJ7HFYbBPyVq7W0LcztzhKPrGM4nSUaq6Fvhgd5zBQSqZyoYMFGtcGdzklFT3oxAEBaxQS4mfV51vAb7h2dRudym2a4Gg2lxWSwR8TivS0LZTBEH-M5x3fLKRqwsyTUqI8NvHBQiaTKg8pLaZKaqZjchxHsNpPYssa09cNU63W70EK7jsNWJ1XuIZUr9eIika0Jb1x7Esx8SgQhwLiD_ukQfBXdbiC3PxE4f2XrC5GaKKfvLMIGU')">
+                        </div>
+                        <div>
+                            <p class="text-lg font-bold">Your Dedicated Concierge: Elena</p>
+                            <p class="text-slate-400 text-sm">Ready to curate your next extraordinary stay.</p>
+                            <div class="flex items-center gap-2 mt-1">
+                                <span class="size-2 rounded-full bg-green-500 animate-pulse"></span>
+                                <span class="text-xs font-semibold text-green-500 uppercase tracking-wider">Online •
+                                    Response time: &lt; 2h</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Travel Details Section -->
+                    <section>
+                        <div class="flex items-center gap-3 mb-6">
+                            <span class="material-symbols-outlined text-accent-gold">calendar_today</span>
+                            <h3 class="text-xl font-bold uppercase tracking-widest text-sm">01. Travel Essentials</h3>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="text-xs font-bold uppercase tracking-widest text-slate-500">Full
+                                    Name</label>
+                                <input
+                                    class="w-full bg-white dark:bg-[#1c1f27] border border-slate-200 dark:border-[#3b4354] rounded-lg p-4 focus:ring-1 focus:ring-primary outline-none transition-all"
+                                    placeholder="Alexander Sterling" type="text" />
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-xs font-bold uppercase tracking-widest text-slate-500">Email
+                                    Address</label>
+                                <input
+                                    class="w-full bg-white dark:bg-[#1c1f27] border border-slate-200 dark:border-[#3b4354] rounded-lg p-4 focus:ring-1 focus:ring-primary outline-none transition-all"
+                                    placeholder="alex@sterling-estates.com" type="email" />
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-xs font-bold uppercase tracking-widest text-slate-500">Preferred
+                                    Destination</label>
+                                <input
+                                    class="w-full bg-white dark:bg-[#1c1f27] border border-slate-200 dark:border-[#3b4354] rounded-lg p-4 focus:ring-1 focus:ring-primary outline-none transition-all"
+                                    placeholder="e.g. Amalfi Coast, Maldives" type="text" />
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-xs font-bold uppercase tracking-widest text-slate-500">Travel
+                                    Window</label>
+                                <input
+                                    class="w-full bg-white dark:bg-[#1c1f27] border border-slate-200 dark:border-[#3b4354] rounded-lg p-4 focus:ring-1 focus:ring-primary outline-none transition-all"
+                                    placeholder="October 2024" type="text" />
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Guest Details Section -->
+                    <section>
+                        <div class="flex items-center gap-3 mb-6">
+                            <span class="material-symbols-outlined text-accent-gold">group</span>
+                            <h3 class="text-xl font-bold uppercase tracking-widest text-sm">02. Party Size</h3>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div
+                                class="flex items-center justify-between p-4 bg-white dark:bg-[#1c1f27] border border-slate-200 dark:border-[#3b4354] rounded-lg">
+                                <span class="font-medium">Adults</span>
+                                <div class="flex items-center gap-4">
+                                    <button
+                                        class="size-8 rounded-full border border-slate-500 flex items-center justify-center hover:bg-primary/20 hover:border-primary">-</button>
+                                    <span class="w-4 text-center font-bold">2</span>
+                                    <button
+                                        class="size-8 rounded-full border border-slate-500 flex items-center justify-center hover:bg-primary/20 hover:border-primary">+</button>
+                                </div>
+                            </div>
+                            <div
+                                class="flex items-center justify-between p-4 bg-white dark:bg-[#1c1f27] border border-slate-200 dark:border-[#3b4354] rounded-lg">
+                                <span class="font-medium">Children</span>
+                                <div class="flex items-center gap-4">
+                                    <button
+                                        class="size-8 rounded-full border border-slate-500 flex items-center justify-center hover:bg-primary/20 hover:border-primary">-</button>
+                                    <span class="w-4 text-center font-bold">0</span>
+                                    <button
+                                        class="size-8 rounded-full border border-slate-500 flex items-center justify-center hover:bg-primary/20 hover:border-primary">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Specific Desires Section -->
+                    <section>
+                        <div class="flex items-center gap-3 mb-6">
+                            <span class="material-symbols-outlined text-accent-gold">auto_awesome</span>
+                            <h3 class="text-xl font-bold uppercase tracking-widest text-sm">03. Bespoke Wishes</h3>
+                        </div>
+                        <div class="space-y-6">
+                            <label class="block text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">How can
+                                we make your stay extraordinary?</label>
+                            <textarea
+                                class="w-full bg-white dark:bg-[#1c1f27] border border-slate-200 dark:border-[#3b4354] rounded-lg p-4 focus:ring-1 focus:ring-primary outline-none transition-all resize-none"
+                                placeholder="Share your vision—private chef, helicopter transfers, or specific celebrations..."
+                                rows="5"></textarea>
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                <button
+                                    class="flex flex-col items-center gap-3 p-4 border border-white/10 rounded-xl hover:border-primary/50 transition-colors group">
+                                    <span
+                                        class="material-symbols-outlined text-slate-500 group-hover:text-primary">flight_takeoff</span>
+                                    <span class="text-xs font-bold uppercase tracking-tighter">Private Jet</span>
+                                </button>
+                                <button
+                                    class="flex flex-col items-center gap-3 p-4 border border-white/10 rounded-xl hover:border-primary/50 transition-colors group">
+                                    <span
+                                        class="material-symbols-outlined text-slate-500 group-hover:text-primary">directions_car</span>
+                                    <span class="text-xs font-bold uppercase tracking-tighter">Chauffeur</span>
+                                </button>
+                                <button
+                                    class="flex flex-col items-center gap-3 p-4 border border-white/10 rounded-xl hover:border-primary/50 transition-colors group">
+                                    <span
+                                        class="material-symbols-outlined text-slate-500 group-hover:text-primary">restaurant</span>
+                                    <span class="text-xs font-bold uppercase tracking-tighter">Private Chef</span>
+                                </button>
+                                <button
+                                    class="flex flex-col items-center gap-3 p-4 border border-white/10 rounded-xl hover:border-primary/50 transition-colors group">
+                                    <span
+                                        class="material-symbols-outlined text-slate-500 group-hover:text-primary">security</span>
+                                    <span class="text-xs font-bold uppercase tracking-tighter">VIP Security</span>
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- CTA -->
+                    <div class="pt-8 border-t border-white/5">
+                        <button
+                            class="w-full md:w-auto bg-primary text-white px-12 py-5 rounded-lg font-bold text-lg hover:shadow-[0_0_30px_rgba(17,82,212,0.3)] transition-all flex items-center justify-center gap-3">
+                            Request Your Personal Proposal
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </button>
+                        <p class="text-slate-500 text-xs mt-4 italic">No commitment required. Our curators will reach
+                            out to finalize details.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Column: Sidebar -->
+            <div class="lg:col-span-4 space-y-8">
+                <!-- Floating Contact Card -->
+                <div class="glass-card p-8 rounded-2xl border border-white/5 shadow-2xl sticky top-32">
+                    <h4 class="text-xl font-bold mb-6 flex items-center gap-2">
+                        Immediate Assistance
+                    </h4>
+                    <div class="space-y-6">
+                        <a class="flex items-center gap-4 group" href="tel:+1800ESCALYA">
+                            <div
+                                class="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all">
+                                <span class="material-symbols-outlined">call</span>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold uppercase tracking-widest text-slate-500">Global Priority
+                                    Line</p>
+                                <p class="text-lg font-medium">+1 800-ESCALYA</p>
+                            </div>
+                        </a>
+                        <a class="flex items-center gap-4 group" href="#">
+                            <div
+                                class="size-12 rounded-full bg-green-500/10 flex items-center justify-center text-green-500 group-hover:bg-green-500 group-hover:text-white transition-all">
+                                <span class="material-symbols-outlined">chat</span>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold uppercase tracking-widest text-slate-500">WhatsApp Concierge
+                                </p>
+                                <p class="text-lg font-medium">Text an Advisor</p>
+                            </div>
+                        </a>
+                        <div class="pt-6 border-t border-white/5">
+                            <div class="flex items-center gap-4 mb-4">
+                                <span class="material-symbols-outlined text-accent-gold">verified_user</span>
+                                <span class="text-sm font-semibold tracking-wide">Signature Protection</span>
+                            </div>
+                            <p class="text-xs text-slate-400 leading-relaxed">
+                                All inquiries are strictly confidential and handled by our senior curation team to
+                                ensure the highest standards of privacy.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Small Map/Location Indicator -->
+                    <div class="mt-8 rounded-xl overflow-hidden h-40 relative group">
+                        <div class="absolute inset-0 bg-gradient-to-t from-background-dark to-transparent z-10"></div>
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            data-alt="Abstract aerial view of a coastal city"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRzk0uj5O486xOosYM_rmFN__6-mhhRm1kDCz3p6jWZt5Ts2eFuMclTeo9rw8ZhCSuz8MZ_3rRCdhgjxZQ9VINlMsZynbn_whad_z6VisAA2xMci5mx6VY_3KGpdVT_7EILpEVxP-Tnzj3qRTa2XNLoYk6feWDQRiPs3xuRzFlHR_Xn_0yM92Bb5BOhG5zJBkU6VY512xn2LJGCZYBB44dAMeHaAmKQHxjSlpLZBr6bXXAnDDg-AwZ1pJT022y4vxJPjQoF2CqWRY" />
+                        <div class="absolute bottom-4 left-4 z-20">
+                            <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-accent-gold">HQ Location</p>
+                            <p class="text-xs font-bold">Geneva, Switzerland</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial/Trust Snippet -->
+                <div class="px-4 py-6 border-l-2 border-accent-gold/30 italic">
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        "Escalya transformed our simple vision into a seamless 3-day masterpiece in Positano. Not a
+                        single detail was overlooked."
+                    </p>
+                    <p class="text-xs font-bold tracking-widest uppercase">— Lord M. Sterling</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer
+        class="max-w-7xl mx-auto px-6 py-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="flex items-center gap-2 opacity-50">
+            <div class="size-4 bg-primary rounded-sm"></div>
+            <span class="text-sm font-bold uppercase tracking-tighter">Escalya Luxury Travel Group</span>
+        </div>
+        <div class="flex gap-8">
+            <a class="text-xs font-bold uppercase tracking-widest text-slate-500 hover:text-white transition-colors"
+                href="#">Privacy Policy</a>
+            <a class="text-xs font-bold uppercase tracking-widest text-slate-500 hover:text-white transition-colors"
+                href="#">Terms of Service</a>
+            <a class="text-xs font-bold uppercase tracking-widest text-slate-500 hover:text-white transition-colors"
+                href="#">Legal Mentions</a>
+        </div>
+        <p class="text-xs text-slate-600">© 2024 Escalya. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
