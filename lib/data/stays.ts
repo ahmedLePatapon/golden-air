@@ -1,5 +1,6 @@
 import type { Stay } from '../types'
 
+// Mock x 10 data for stays
 export const stays: Stay[] = [
     {
         id: 'stay-001',
