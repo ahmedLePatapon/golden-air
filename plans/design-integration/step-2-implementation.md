@@ -33,15 +33,15 @@ npm install next-themes
 npm uninstall lucide-react
 ```
 
-##### Step 2.1 Verification Checklist
-- [ ] `next-themes` apparaît dans `package.json` sous `dependencies`
-- [ ] Pas d'erreurs d'installation
+#### Step 2.1 Verification Checklist
+- [x] `next-themes` apparaît dans `package.json` sous `dependencies`
+- [x] Pas d'erreurs d'installation
 
 ---
 
 #### Step 2.2: Créer le ThemeProvider
 
-- [ ] Créez le fichier `components/providers/theme-provider.tsx` :
+-- [x] Créez le fichier `components/providers/theme-provider.tsx` :
 
 ```tsx
 "use client";
@@ -66,7 +66,7 @@ export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
 }
 ```
 
-- [ ] Mettez à jour `app/layout.tsx` pour intégrer le ThemeProvider :
+-- [x] Mettez à jour `app/layout.tsx` pour intégrer le ThemeProvider :
 
 ```tsx
 import type { Metadata } from "next";
@@ -111,9 +111,9 @@ export default function RootLayout({
 ```
 
 ##### Step 2.2 Verification Checklist
-- [ ] Pas d'erreurs de build (`npm run dev`)
-- [ ] La page charge sans erreur hydration
-- [ ] Le body a la classe `dark` par défaut
+- [x] Pas d'erreurs de build (`npm run dev`)
+- [x] La page charge sans erreur hydration
+- [x] Le body a la classe `dark` par défaut
 
 #### Step 2.2 STOP & COMMIT
 **STOP & COMMIT:** Testez que l'application démarre correctement, puis commitez :
@@ -252,9 +252,9 @@ export function cn(...inputs: ClassValue[]) {
 npm install tailwind-merge
 ```
 
-##### Step 2.3 Verification Checklist
-- [ ] Pas d'erreurs TypeScript
-- [ ] Le composant Icon peut être importé sans erreur
+#### Step 2.3 Verification Checklist
+- [x] Pas d'erreurs TypeScript
+- [x] Le composant Icon peut être importé sans erreur
 
 #### Step 2.3 STOP & COMMIT
 **STOP & COMMIT:** Commitez le composant Icon :
@@ -374,9 +374,9 @@ Button.displayName = "Button";
 export { Button, buttonVariants };
 ```
 
-##### Step 2.4 Verification Checklist
-- [ ] Pas d'erreurs TypeScript
-- [ ] Les variants sont correctement typés
+#### Step 2.4 Verification Checklist
+- [x] Pas d'erreurs TypeScript
+- [x] Les variants sont correctement typés
 
 #### Step 2.4 STOP & COMMIT
 **STOP & COMMIT:** Commitez le composant Button :
@@ -514,9 +514,9 @@ Input.displayName = "Input";
 export { Input, inputVariants };
 ```
 
-##### Step 2.5 Verification Checklist
-- [ ] Pas d'erreurs TypeScript
-- [ ] Les variants glass et search sont disponibles
+#### Step 2.5 Verification Checklist
+- [x] Pas d'erreurs TypeScript
+- [x] Les variants glass et search sont disponibles
 
 #### Step 2.5 STOP & COMMIT
 **STOP & COMMIT:** Commitez le composant Input :
@@ -647,8 +647,8 @@ export {
 ```
 
 ##### Step 2.6 Verification Checklist
-- [ ] Pas d'erreurs TypeScript
-- [ ] Les badges pré-configurés sont exportés
+- [x] Pas d'erreurs TypeScript
+- [x] Les badges pré-configurés sont exportés
 
 #### Step 2.6 STOP & COMMIT
 **STOP & COMMIT:** Commitez le composant Badge :
@@ -857,9 +857,9 @@ export {
 ```
 
 ##### Step 2.7 Verification Checklist
-- [ ] Pas d'erreurs TypeScript
-- [ ] Les sous-composants Card sont exportés
-- [ ] CardImage supporte les overlays
+- [x] Pas d'erreurs TypeScript
+- [x] Les sous-composants Card sont exportés
+- [x] CardImage supporte les overlays
 
 #### Step 2.7 STOP & COMMIT
 **STOP & COMMIT:** Commitez le composant Card :
@@ -901,7 +901,7 @@ export { Icon, type IconName } from "./icon";
 ```
 
 ##### Step 2.8 Verification Checklist
-- [ ] Import unique possible : `import { Button, Card, Icon } from "@/components/ui"`
+- [x] Import unique possible : `import { Button, Card, Icon } from "@/components/ui"`
 
 ---
 
@@ -1199,12 +1199,12 @@ export default function TestUIPage() {
 ```
 
 ##### Step 2.9 Verification Checklist
-- [ ] Accédez à `http://localhost:3000/test-ui`
-- [ ] Tous les composants s'affichent correctement
-- [ ] Les variants et tailles sont visibles
-- [ ] Les icônes Material Symbols chargent
-- [ ] Le thème dark s'applique correctement
-- [ ] Les hover states fonctionnent
+- [x] Accédez à `http://localhost:3000/test-ui`
+- [x] Tous les composants s'affichent correctement
+- [x] Les variants et tailles sont visibles
+- [x] Les icônes Material Symbols chargent
+- [x] Le thème dark s'applique correctement
+- [x] Les hover states fonctionnent
 
 #### Step 2.9 STOP & COMMIT
 **STOP & COMMIT:** Testez la page UI, puis commitez :
@@ -1212,6 +1212,8 @@ export default function TestUIPage() {
 git add .
 git commit -m "feat: add UI test page and component index exports"
 ```
+
+> ✅ Committed: components and test page added, branch pushed
 
 ---
 
