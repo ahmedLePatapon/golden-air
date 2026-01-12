@@ -35,8 +35,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,0..1" rel="stylesheet" />
       </head>
-      <body>
-        <ThemeProvider attribute="class">
+      <body className="font-jakarta antialiased bg-background-light dark:bg-background-dark text-gray-900 dark:text-white min-h-screen">
+        <ThemeProvider>
           {children}
         </ThemeProvider>
       </body>
