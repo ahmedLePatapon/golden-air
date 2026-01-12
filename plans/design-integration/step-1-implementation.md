@@ -17,20 +17,20 @@ git checkout -b feat/design-integration
 
 ### Step 1.1: Désinstaller lucide-react
 
-- [ ] Exécuter la commande suivante dans le terminal :
+- [x] Exécuter la commande suivante dans le terminal :
 ```bash
 npm uninstall lucide-react
 ```
 
 #### Vérification 1.1
-- [ ] `lucide-react` n'apparaît plus dans `package.json`
-- [ ] Pas d'erreur lors de la désinstallation
+- [x] `lucide-react` n'apparaît plus dans `package.json`
+- [x] Pas d'erreur lors de la désinstallation
 
 ---
 
 ### Step 1.2: Mettre à jour la configuration Tailwind
 
-- [ ] Remplacer entièrement le contenu de `tailwind.config.ts` par :
+- [x] Remplacer entièrement le contenu de `tailwind.config.ts` par :
 
 ```typescript
 import type { Config } from 'tailwindcss'
@@ -152,7 +152,7 @@ export default config
 
 ### Step 1.3: Mettre à jour les styles globaux CSS
 
-- [ ] Remplacer entièrement le contenu de `app/globals.css` par :
+- [x] Remplacer entièrement le contenu de `app/globals.css` par :
 
 ```css
 @import "tailwindcss";
@@ -477,14 +477,14 @@ h1, h2, h3, h4, h5, h6 {
 ```
 
 #### Vérification 1.3
-- [ ] Pas d'erreur de syntaxe CSS
-- [ ] Les variables CSS sont définies pour les deux modes
+- [x] Pas d'erreur de syntaxe CSS
+- [x] Les variables CSS sont définies pour les deux modes
 
 ---
 
 ### Step 1.4: Mettre à jour le Layout principal
 
-- [ ] Remplacer entièrement le contenu de `app/layout.tsx` par :
+- [x] Remplacer entièrement le contenu de `app/layout.tsx` par :
 
 ```tsx
 import type { Metadata } from 'next'
@@ -552,15 +552,15 @@ export default function RootLayout({
 ```
 
 #### Vérification 1.4
-- [ ] Le fichier n'a pas d'erreur TypeScript
-- [ ] Les imports de fonts sont présents dans le `<head>`
-- [ ] `ThemeProvider` est importé (créé à l'étape suivante)
+- [x] Le fichier n'a pas d'erreur TypeScript
+- [x] Les imports de fonts sont présents dans le `<head>`
+- [x] `ThemeProvider` est importé (créé à l'étape suivante)
 
 ---
 
 ### Step 1.5: Créer le ThemeProvider
 
-- [ ] Créer le fichier `components/providers/theme-provider.tsx` avec le contenu :
+- [x] Créer le fichier `components/providers/theme-provider.tsx` avec le contenu :
 
 ```tsx
 'use client'
@@ -576,15 +576,15 @@ export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
 ```
 
 #### Vérification 1.5
-- [ ] Le fichier est créé dans le bon répertoire
-- [ ] Pas d'erreur TypeScript
-- [ ] Le composant exporte correctement `ThemeProvider`
+- [x] Le fichier est créé dans le bon répertoire
+- [x] Pas d'erreur TypeScript
+- [x] Le composant exporte correctement `ThemeProvider`
 
 ---
 
 ### Step 1.6: Mettre à jour les Types TypeScript
 
-- [ ] Remplacer entièrement le contenu de `lib/types/index.ts` par :
+- [x] Remplacer entièrement le contenu de `lib/types/index.ts` par :
 
 ```typescript
 /**
@@ -809,15 +809,15 @@ export interface PaginatedResponse<T> {
 ```
 
 #### Vérification 1.6
-- [ ] Pas d'erreur TypeScript
-- [ ] Tous les types nécessaires sont exportés
-- [ ] Les types correspondent aux données mock
+- [x] Pas d'erreur TypeScript
+- [x] Tous les types nécessaires sont exportés
+- [x] Les types correspondent aux données mock
 
 ---
 
 ### Step 1.7: Enrichir les Données Mock
 
-- [ ] Remplacer entièrement le contenu de `lib/data/stays.ts` par :
+- [x] Remplacer entièrement le contenu de `lib/data/stays.ts` par :
 
 ```typescript
 import { Stay } from '@/lib/types'
@@ -1340,16 +1340,16 @@ export function getAllWellnessOptions(): string[] {
 ```
 
 #### Vérification 1.7
-- [ ] Pas d'erreur TypeScript
-- [ ] 8 séjours sont définis avec toutes les propriétés requises
-- [ ] Les fonctions helper sont exportées
-- [ ] Les images utilisent des URLs Unsplash valides
+- [x] Pas d'erreur TypeScript
+- [x] 8 séjours sont définis avec toutes les propriétés requises
+- [x] Les fonctions helper sont exportées
+- [x] Les images utilisent des URLs Unsplash valides
 
 ---
 
 ### Step 1.8: Créer la structure des images
 
-- [ ] Créer le dossier pour les images :
+- [x] Créer le dossier pour les images :
 ```bash
 mkdir -p public/images/stays
 mkdir -p public/images/services
@@ -1359,21 +1359,21 @@ mkdir -p public/images/backgrounds
 > **Note :** Pour cette étape, nous utilisons des images Unsplash externes. Les images locales pourront être ajoutées ultérieurement si nécessaire.
 
 #### Vérification 1.8
-- [ ] Les dossiers `public/images/stays`, `public/images/services`, `public/images/backgrounds` existent
+- [x] Les dossiers `public/images/stays`, `public/images/services`, `public/images/backgrounds` existent
 
 ---
 
 ## Verification Checklist Finale - Step 1
 
-- [ ] `lucide-react` n'est plus dans `package.json`
-- [ ] `tailwind.config.ts` contient toutes les couleurs du design
-- [ ] `app/globals.css` contient les variables CSS et les classes utilitaires
-- [ ] `app/layout.tsx` importe les fonts Google et Material Symbols
-- [ ] `components/providers/theme-provider.tsx` existe et exporte `ThemeProvider`
-- [ ] `lib/types/index.ts` contient tous les types enrichis
-- [ ] `lib/data/stays.ts` contient 8 séjours avec toutes les propriétés
-- [ ] L'application démarre sans erreur : `npm run dev`
-- [ ] Le mode sombre fonctionne (inspecter `<html class="dark">`)
+- [x] `lucide-react` n'est plus dans `package.json`
+- [x] `tailwind.config.ts` contient toutes les couleurs du design
+- [x] `app/globals.css` contient les variables CSS et les classes utilitaires
+- [x] `app/layout.tsx` importe les fonts Google et Material Symbols
+- [x] `components/providers/theme-provider.tsx` existe et exporte `ThemeProvider`
+- [x] `lib/types/index.ts` contient tous les types enrichis
+- [x] `lib/data/stays.ts` contient 8 séjours avec toutes les propriétés
+- [x] L'application démarre sans erreur : `npm run dev`
+- [x] Le mode sombre fonctionne (inspecter `<html class="dark">`)
 
 ### Test Rapide
 
